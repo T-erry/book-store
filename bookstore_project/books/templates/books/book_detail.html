@@ -24,10 +24,11 @@
 
     <div class="mt-10">
     <p class="text-3xl">Author</p>
-    <div class="text-gray-600 mt-5">
+    <p class="text-gray-600 mt-5">
     {% for author in authors %}
-    <a href={% url 'author.books' author %}>{{author}}</a>,
+       {{author}},
     {% endfor %}
+  </p>
     </div>
 
     <div class="mt-10">
