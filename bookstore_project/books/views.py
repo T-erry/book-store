@@ -24,7 +24,7 @@ class BookListView(ListView):
 class BookDetailView(DetailView):
     model = Book
      #.review_set: This accesses the related manager for the review field (assuming a foreign key relationship between Book and Review models).
-        #  Creating relationship where Book has many reviews:book.review_set.all to get all the reviews
+        #  Creating relationship where Book has many reviews:review_set.all to get all the reviews
         #.order_by('-created_at'): This orders the retrieved reviews by their creation date in descending order (newest first). 
         # This ensures the latest reviews are displayed first.
 
@@ -43,6 +43,15 @@ class BookDetailView(DetailView):
 #     reviews= Review.objects.filter(book_id=id).order_by('-created_at')
 #     context = {'book': singleBook, 'reviews':reviews}
 #     return render(request, 'books/show.html', context)
+
+
+
+def author(request,author):
+     books = Book.objects.filter(authors__name=author)
+     context ={'book_list': books}
+     return render(request, 'books/book_list.html', context)
+
+
 
 
 #POST method
