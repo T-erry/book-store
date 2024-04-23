@@ -2,8 +2,10 @@
 
 {% block title%}BokStore - Books {% endblock %}
 
-
-
+{% block nav_title  %}
+View All Books
+{% endblock nav_title  %}
+View All Books
 {% block content%}
     <div>
       <div class="grid grid-cols-4 gap-4 mt-10">
@@ -12,7 +14,7 @@
           href="{% url 'book.show' book.id %}"
           class="justify-self-center text-center my-4"
           target="_blank"
-        >
+        > 
           <div class="flex justify-center">
             <img
               src="{{book.thumbnailURL}}"
