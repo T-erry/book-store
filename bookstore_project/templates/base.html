@@ -20,12 +20,12 @@
           {% endblock %}
           </h1>
   
-        <div class="flex justify-end gap-3">
-          
-          <div>
-            <a href="{% url 'logout' %}" class="p-2 rounded bg-gray-700 text-white">Logout</a>
-          </div>
-          
+          <div class="flex justify-end">
+            {% if user.is_authenticated %}
+            <div>
+              <a href={% url 'logout'%} class="p-2 rounded bg-gray-700 text-white">Logout</a>
+            </div>
+            {% endif %}
           {% comment %} <div>
             <a href="{% url 'login' %}" class="p-2 rounded bg-white text-black">Login</a>
           </div> {% endcomment %}
