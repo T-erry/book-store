@@ -52,6 +52,7 @@
     <div class="mt-40">
     {% for review in reviews %}
     <div class="my-6">
+      <p>{{review.user}}</p>
     <p>{{review.body}}</p>
     </div>
     {% endfor %}

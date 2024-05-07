@@ -23,7 +23,7 @@ def __str__(self):
     return self.title
 
 class Review(models.Model):
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True )
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True )
     body = models.TextField()
     created_at = models.DateTimeField(auto_now=True)
     book = models.ForeignKey(Book, on_delete= models.CASCADE, null=True)
