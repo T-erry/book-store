@@ -3,7 +3,7 @@ from django.db.models.query import QuerySet
 from django.shortcuts import render, get_object_or_404,redirect
 from books.models import Book, Review 
 from django.views.generic import ListView, DetailView
-from django.contrib.auth.mixins import LoginRequiredMixin
+# from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 
@@ -11,7 +11,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 # Create your views here.
-class BookListView(LoginRequiredMixin, ListView):
+class BookListView(ListView):
     def get_queryset(self):
         return Book.objects.all()
 
