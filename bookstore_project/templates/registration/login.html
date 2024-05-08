@@ -25,7 +25,7 @@ next: The URL to redirect to after successful login. This may contain a query st
 <input type="submit" value="login" class="py-1 px-2 mt-5 bg-green-400 text-white rounded w-full cursor-pointer hover:bg-green-800">
 <input type="hidden" name="next" value="{{ next }}">
 
-<p class="text-sm  mt-5"><a href="{%url 'password_reset' %}"></a>Lost password?</p>
+<p class="text-sm mt-5 cursor-pointer"><a href="{% url 'password_reset' %}">Lost password</a>?</p>
 
         </form>
     </section>
