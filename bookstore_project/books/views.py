@@ -56,9 +56,10 @@ def author(request,author):
 
 #POST method
 def review(request, id):
-   # # create a form instance and populate it with data from the request:
-   body = (request.POST['review'])
-   newReview = Review(body=body, book_id=id)
-   newReview.save()
-   return redirect('/books')
+    if request.user.is_authenticated:
+   #  create a form instance and populate it with data from the request:
+        body = (request.POST['review'])
+        newReview = Review(body=body, book_id=id, user=request.user)
+        newReview.save()
+        return redirect('/books')
     
