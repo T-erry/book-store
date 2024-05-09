@@ -122,6 +122,10 @@ LOGIN_REDIRECT_URL= "book.all"
 LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'login'
 
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '1798a6c047d797'
+EMAIL_HOST_PASSWORD = '1579d750944ccc'
+EMAIL_PORT = '2525'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
