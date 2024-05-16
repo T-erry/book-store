@@ -4,39 +4,20 @@
 
 Bookstore - This a Django application that allows users to browse books, view details of individual books, and leave reviews (after logging in). The Django admin interface is used to manage books and reviews (Create, Read, Update, Delete - CRUD).
 
-## Setup 
+
+
+## Setup
 ### The first thing to do is to clone the repository:
+ - $ git clone git@github.com:T-erry/book-store.git 
+ -  $ cd book-store
 
-$ git clonegit @github.com:T-erry/book-store.git
-$ cd bookstore_project
 
-### Create a virtual environment to install dependencies in and activate it:
-
-$ virtualenv2 .venv
-$ source .venv/bin/activate
+###  Create a virtual environment to install dependencies in and activate it:
+- $ virtualenv2 .venv 
+- $ source .venv/bin/activate
 
 ### Then install the dependencies:
-(env)$ pip install -r requirements.txt
-
-### Once pip has finished downloading the dependencies:#  BookStore application
-
-## Project name
-
-Bookstore - This a Django application that allows users to browse books, view details of individual books, and leave reviews (after logging in). The Django admin interface is used to manage books and reviews (Create, Read, Update, Delete - CRUD).
-
-## Setup 
-### The first thing to do is to clone the repository:
-
-$ git clonegit @github.com:T-erry/book-store.git
-$ cd bookstore_project
-
-### Create a virtual environment to install dependencies in and activate it:
-
-$ virtualenv2 .venv
-$ source .venv/bin/activate
-
-### Then install the dependencies:
-(env)$ pip install -r requirements.txt
+- (env)$ pip install -r requirements.txt
 
 ### Once pip has finished downloading the dependencies:
 (env)$ cd project
@@ -44,17 +25,6 @@ $ source .venv/bin/activate
 
 And navigate to http://127.0.0.1:8000/books/
 
-## Features
-- Users can view a list of all books in the system.
-- Users can view details of individual books, including a list of associated reviews.
-- Users can search for books by author. 
-- Logged-in Samusers can leave reviews for books.
-
-
-(env)$ cd project
-(env)$ python3 manage.py runserver
-
-And navigate to http://127.0.0.1:8000/books/
 
 ## Features
 - Users can view a list of all books in the system.
