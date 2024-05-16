@@ -8,7 +8,7 @@ Bookstore - This a Django application that allows users to browse books, view de
 
 ## Setup
 ### The first thing to do is to clone the repository:
- - $ git clone git@github.com:T-erry/book-store.git 
+ - $ git clone git@github.com:T-erry/book-store.git
  -  $ cd book-store
 
 
@@ -30,7 +30,7 @@ And navigate to http://127.0.0.1:8000/books/
 - Users can view a list of all books in the system.
 - Users can view details of individual books, including a list of associated reviews.
 - Users can search for books by author. 
-- Logged-in Samusers can leave reviews for books.
+- Logged-in users can leave reviews for books.
 
 ### technologies used
 - Django
