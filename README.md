@@ -50,12 +50,6 @@ And navigate to http://127.0.0.1:8000/books/
 - Users can search for books by author. 
 - Logged-in Samusers can leave reviews for books.
 
-### technologies used
-- Django
-- SQLite
-- HTML
-- Tailwind
-
 
 (env)$ cd project
 (env)$ python3 manage.py runserver
