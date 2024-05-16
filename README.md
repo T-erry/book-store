@@ -38,3 +38,5 @@ And navigate to http://127.0.0.1:8000/books/
 - HTML
 - Tailwind
 
+## License and Copyright Information
+Licensed under [MT License] ("https://github.com/T-erry/book-store/blob/main/LICENSE")
